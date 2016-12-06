@@ -35,7 +35,10 @@
   <ItemGroup>
     <Compile Include="client\systemjs.config.js" />
     <Compile Include="server.js" />
+    <Content Include="client\app\app.component.css" />
     <Content Include="client\app\app.component.html" />
+    <Content Include="client\app\tools\calculator\calculator.component.html" />
+    <Content Include="client\app\tools\tools.component.html" />
     <Content Include="client\package.json" />
     <Content Include="client\tsconfig.json" />
     <Content Include="client\typings.json" />
@@ -46,6 +49,8 @@
   <ItemGroup>
     <Folder Include="client\" />
     <Folder Include="client\app\" />
+    <Folder Include="client\app\tools\" />
+    <Folder Include="client\app\tools\calculator\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\js\" />
@@ -85,9 +90,12 @@
     <Folder Include="typings\globals\validator\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="client\app\app-routing.module.ts" />
     <TypeScriptCompile Include="client\app\app.component.ts" />
     <TypeScriptCompile Include="client\app\app.module.ts" />
     <TypeScriptCompile Include="client\app\main.ts" />
+    <TypeScriptCompile Include="client\app\tools\calculator\calculator.component.ts" />
+    <TypeScriptCompile Include="client\app\tools\tools.component.ts" />
     <TypeScriptCompile Include="typings\globals\async\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\bcrypt-nodejs\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
